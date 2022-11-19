@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'moon';
+    src: url('fontes/Montserrat-VariableFont_wght.ttf')format('truetype');
+    font-size: normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url(fontes/Roboto-Regular.ttf)format('truetype');
+    font-size: normal;
+    font-weight:normal;;
+}
+*{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+.destacarPf{
+    font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.destacarPhead{
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.destacarP{
+    font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align:center;
+}
+.destacarH{
+    color: rgb(255, 255, 255);
+    font-family: 'moon', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(1.6rem, 4vw, 10rem);
+  }
+  .destacarHnocolor{
+    
+    font-family: 'moon', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(0.7rem, 3vw, 2rem);
+    font-weight: bold;
+  }
+  .card1 p , .card2 p {
+    font-size: 1.2em;
+  }
+ section.module :last-child {
+    margin-bottom: 0;
+
+ }
+ section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+ }
+ section.module.content{
+    padding: 40px 0;
+    background-color: #0DCAF0;
+ }
+section.module.parallax{
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh!important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position:50% 50% ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax2{
+    display:flexbox;
+    flex-direction: column;
+    justify-content: center;
+    height: auto !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position:50% 50% ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient( to bottom,#00000000 0%,#00000000 20% ,#00000000 40%,#00000000 60%,#000 100%);
+}
+section.module.parallax-1,section.module.parallax2{
+    background-image: url("image/a1/children-1_1980.jpg");
+    background-size: cover;
+  
+}
+section.carousel1{
+    margin: auto;
+    padding: 0px 30px 10px 30px;
+   
+}
+.card1 ,.card2,.carousel1 , .textopo{
+    visibility: hidden;
+}
+.divcontato{
+    margin-top: 200px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width:auto;
+  }
+  .contato >input{
+      width: 100%;
+      padding: 8px 0px;
+      margin: 8px 0px;
+  }
+  
+  #message[type = 'text']{
+      height: 100px;
+  }
+ 
